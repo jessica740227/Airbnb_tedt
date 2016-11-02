@@ -1,0 +1,619 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+.clear {
+	clear: both;
+}
+@media screen and (max-width: 743px) {
+#banner_video {
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+}
+	#header {
+		width: 100%;
+		height: 40px;
+		padding-top: 6px;
+		background-color: #fff;
+		position: fixed;
+		z-index: 2;
+	}
+	#hamburger{
+		float: left;
+		width: 10%;
+		height: 46px;
+		text-align: center;
+		line-height: 46px;
+		color: #d43242;
+	}
+	#header_logo {
+		display: none;
+		width: 10%;
+		height: 46px;
+		float: left;
+		text-align: center;
+		line-height: 61px;
+		background-color: #ff5a5f;
+	}
+	#header_right {
+		width: 90%;
+		height: 46px;
+		float: right;
+		font-family: "微軟正黑體",Arial;
+	}
+	#header_right ul {
+		display: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#header_right li {
+		margin: 0;
+		padding: 0px 20px;
+		list-style: none;
+		float: right;
+		line-height: 46px;
+		font-size: 14px;
+		border-left: solid 1px #ccc;
+	}
+	#add_landlord {
+		display: none;
+		width: 100px;
+		margin-top: 15px;
+		margin-right: 20px;
+		float: right;
+		padding: 5px 0px;
+		border: solid 2px #ccc;
+		text-align: center;
+		border-radius: 2px;
+		font-size: 14px;
+	}
+	#search {
+		width:calc(93% - 10px);
+		height: 30px;
+		
+		padding-left: 10px; 
+		line-height: 30px;
+		color: #666;
+		border: solid 1px #ccc;
+		border-radius: 5px;
+		text-align: center;
+	}
+	#main {
+		width: 100%;
+		height: 400px;
+		background-color: #ccc;
+		background-image: url('../img/02.jpg');
+		background-position: center;
+		background-size: cover;
+		position: relative;
+
+	}
+	#main_table {
+		width: 100%;
+		position: absolute ;
+		top: 120px;
+	}
+	#banner_txtbox {
+		width: 90%;
+		padding: 0px 5%;
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 18px;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+		color: #fff;
+		line-height: 40px;
+	}
+	#banner_txtbox span {
+		text-align: center;
+		font-size: 31px;
+		font-family: Arial;
+		font-weight: 700;
+		color: #fff;
+		display: block;
+	}
+	#banner_icon{
+		display: none;
+		width: 170px;
+		padding: 10px;
+		margin: 0 auto;
+		background-color: rgba(255, 255, 255, 0.3);
+		text-align: center;
+		border-radius: 5px;
+		color: #fff;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+	}
+	#banner_icon_pad_phone{
+		width: 170px;
+		padding: 10px;
+		margin: 10px auto 30px auto;
+		background-color: rgba(255, 255, 255, 0.3);
+		text-align: center;
+		border-radius: 5px;
+		color: #fff;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+	}
+	#date_search {
+		width: 86%;
+		height: 42px;
+		
+		position: absolute;
+		bottom: 20px;
+		left: 7%;
+	}
+	#search_where {
+		padding: 10px 0px;
+		color: #666;
+		text-align: center;
+		background-color: #fff;
+		border: solid 1px #ccc;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 14px;
+	}
+	#adbox {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px; 
+		background-color: #fff; 
+	}
+	#adbox_title {
+		padding: 32px 0px;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 16px;
+		color: #484848;
+	}
+	#adbox_title span {
+		font-size: 32px;
+		font-weight: bold;
+		display: block;
+	}
+	#adbox ul {
+		width: 100%;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;   
+		padding: 0;
+		list-style: none;
+	}
+	#adbox li {
+		width: 100%;
+		height: 344px;
+		float: left;
+		line-height: 344px;
+		color: #fff;
+		font-weight: bold;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 32px;
+	}
+	#adbox li:nth-child(1) {
+		background-image: url('../img/377.jpg');
+		background-size: cover;
+	}
+	#adbox li:nth-child(2) {
+		background-image: url('../img/3962.jpg');
+		background-size: cover;
+	}
+	#adbox li:nth-child(3) {
+		background-image: url('../img/4328.jpg');
+		background-size: cover;
+	}
+	#ad_icon {
+		display: none;
+		padding: 10px 0px;
+		width: calc(100%/3 - 120px);
+		border: solid 1px #666;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		border-radius: 5px;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 744px) and (max-width: 1229px){
+#banner_video {
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+}
+	#header {
+		width: 100%;
+		height: 61px;
+		background-color: #fff;
+		position: fixed;
+		z-index: 2;
+	}
+	#hamburger{
+		display: none;
+	}
+	#header_logo {
+		width:calc(20% - 1px);
+		height: 61px;
+		float: left;
+		text-align: center;
+		line-height: 61px;
+		background-image: url(../img/logo.png);
+		background-size: 99px;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-right: solid 1px #ccc;
+	}
+	#header_right {
+		width: 80%;
+		height: 61px;
+		float: right;
+		font-family: "微軟正黑體",Arial;
+	}
+	#header_right ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#header_right li {
+		margin: 0;
+		padding: 0px 20px;
+		list-style: none;
+		float: right;
+		line-height: 61px;
+		font-size: 14px;
+		border-left: solid 1px #ccc;
+	}
+	#add_landlord {
+		display: none;
+		width: 100px;
+		margin-top: 15px;
+		margin-right: 20px;
+		float: right;
+		padding: 5px 0px;
+		border: solid 2px #ccc;
+		text-align: center;
+		border-radius: 2px;
+		font-size: 14px;
+	}
+	#search {
+		width:calc(73% - 10px);
+		height: 61px;
+		padding-left: 10px; 
+		line-height: 61px;
+		color: #666;
+	}
+	#main {
+		width: 100%;
+		height: 600px;
+		background-color: #ccc;
+		background-image: url('../img/02.jpg');
+		background-position: center;
+		background-size: cover;
+		position: relative;
+
+	}
+	#main_table {
+		width: 100%;
+		position: absolute ;
+		top: 230px;
+	}
+	#banner_txtbox {
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 18px;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+		color: #fff;
+		line-height: 40px;
+	}
+	#banner_txtbox span {
+		text-align: center;
+		font-size: 60px;
+		font-family: Arial;
+		font-weight: 700;
+		color: #fff;
+		display: block;
+	}
+	#banner_icon{
+		width: 170px;
+		padding: 10px;
+		margin: 0 auto;
+		background-color: rgba(255, 255, 255, 0.3);
+		text-align: center;
+		border-radius: 5px;
+		color: #fff;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+	}
+	#banner_icon_pad_phone{
+		display: none;
+		width: 170px;
+		padding: 10px;
+		margin: 10px auto 30px auto;
+		background-color: rgba(255, 255, 255, 0.3);
+		text-align: center;
+		border-radius: 5px;
+		color: #fff;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+	}
+	#date_search {
+		width: 91%;
+		height: 73px;
+		padding-top: 30px;
+		padding-left: 5%;
+		background-color: rgba(0, 0, 0, 0.8);
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+	}
+	#search_where {
+		padding: 10px 0px;
+		color: #666;
+		text-align: center;
+		background-color: #fff;
+		border: solid 1px #ccc;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 14px;
+	}
+	#adbox {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px; 
+		background-color: #fff; 
+	}
+	#adbox_title {
+		padding: 32px 0px;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 16px;
+		
+	}
+	#adbox_title span {
+		font-size: 32px;
+		font-weight: bold;
+		display: block;
+	}
+	#adbox ul {
+		width: 90%;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;   
+		padding: 0;
+		list-style: none;
+	}
+	#adbox li {
+		height: 344px;
+		float: left;
+		line-height: 344px;
+		color: #fff;
+		font-weight: bold;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 32px;
+	}
+	#adbox li:nth-child(1) {
+		width: 100%;
+		margin-bottom: 20px;
+		background-image: url('../img/377.jpg');
+		background-size: cover;
+	}
+	#adbox li:nth-child(2) {
+		width: calc(50% - 10px);
+		margin-right: 20px;
+		background-image: url('../img/3962.jpg');
+		background-size: cover;
+	}
+	#adbox li:nth-child(3) {
+		width: calc(50% - 10px);
+		background-image: url('../img/4328.jpg');
+		background-size: cover;
+	}
+	#ad_icon {
+		padding: 10px 0px;
+		width: 90%;
+		border: solid 1px #666;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		border-radius: 5px;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+
+@media screen and (min-width:1230px) {
+#banner_video {
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+}
+	#header {
+		width: 100%;
+		height: 61px;
+		background-color: #fff;
+		position: fixed;
+		z-index: 2;
+	}
+	#hamburger {
+		display: none;
+	}
+	#header_logo {
+		width:calc(10% - 1px);
+		height: 61px;
+		float: left;
+		text-align: center;
+		line-height: 61px;
+		background-image: url(../img/logo.png);
+		background-size: 99px;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-right: solid 1px #ccc;
+	}
+	#header_right {
+		width: 90%;
+		height: 61px;
+		float: right;
+		font-family: "微軟正黑體",Arial;
+	}
+	#header_right ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#header_right li {
+		margin: 0;
+		padding: 0px 20px;
+		list-style: none;
+		float: right;
+		line-height: 61px;
+		font-size: 14px;
+		border-left: solid 1px #ccc;
+	}
+	#add_landlord {
+		width: 100px;
+		margin-top: 15px;
+		margin-right: 20px;
+		float: right;
+		padding: 5px 0px;
+		border: solid 2px #ccc;
+		text-align: center;
+		border-radius: 2px;
+		font-size: 14px;
+	}
+	#search {
+		width:calc(73% - 10px);
+		height: 61px;
+		padding-left: 10px; 
+		line-height: 61px;
+		color: #666;
+	}
+	#main {
+		width: 100%;
+		height: 600px;
+		/*background-image: url('../img/02.jpg');*/
+		background-position: center;
+		background-size: cover;
+		position: relative;
+
+	}
+	#main_table {
+		width: 100%;
+		position: absolute ;
+		top: 220px;
+	}
+	#banner_txtbox {
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 18px;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+		color: #fff;
+	}
+	#banner_txtbox span {
+		text-align: center;
+		font-size: 60px;
+		font-family: Arial;
+		font-weight: 700;
+		color: #fff;
+		display: block;
+	}
+	#banner_icon_pad_phone {
+		display: none;
+	}
+	#banner_icon{
+		width: 200px;
+		padding: 10px;
+		margin: 0 auto;
+		background-color: rgba(255, 255, 255, 0.3);
+		text-align: center;
+		border-radius: 5px;
+		color: #fff;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+	}
+	#date_search {
+		width: 100%;
+		height: 73px;
+		padding-top: 30px;
+		padding-left: 10%;
+		background-color: rgba(0, 0, 0, 0.8);
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+	}
+	#search_where {
+		width: 80%;
+		padding: 10px 0px;
+		color: #666;
+		text-align: center;
+		background-color: #fff;
+		border: solid 1px #ccc;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 14px;
+	}
+	#adbox {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px; 
+		background-color: #fff; 
+	}
+	#adbox_title {
+		padding: 32px 0px;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 16px;
+		
+	}
+	#adbox_title span {
+		font-size: 32px;
+		font-weight: bold;
+		display: block;
+	}
+	#adbox ul {
+		width: 1029px;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;   
+		padding: 0;
+		list-style: none;
+	}
+	#adbox li {
+		width: 327px;
+		height: 344px;
+		float: left;
+		line-height: 344px;
+		color: #fff;
+		font-weight: bold;
+		font-family:"微軟正黑體" ,Arial;
+		font-size: 32px;
+	}
+	#adbox li:nth-child(1) {
+		background-image: url('../img/377.jpg');
+		background-size: cover;
+		margin-right:24px;
+	}
+	#adbox li:nth-child(2) {
+		background-image: url('../img/3962.jpg');
+		background-size: cover;
+		margin-right:24px;
+	}
+	#adbox li:nth-child(3) {
+		background-image: url('../img/4328.jpg');
+		background-size: cover;
+	}
+	#ad_icon {
+		padding: 10px 0px;
+		width: calc(100%/3 - 120px);
+		border: solid 1px #666;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		border-radius: 5px;
+		font-family:"微軟正黑體" ,Arial;
+		font-weight: bold;
+		text-align: center;
+	}
+}
